@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            блок
+        {% endblock %}
+    </title>
+</head>
+<body>
+  {% include 'includes/header.html' %}
+  <div>
+      {% block content %}
+          блок
+      {% endblock %}
+  </div>
+  {% include 'includes/footer.html' %}
+</body>
+</html>
